@@ -1,18 +1,18 @@
 
 public class Factory {
 	private static Factory m_instance;
-	public String m_message;
 	public IMessageParser m_parser;
-	public Factory(String message){
-		m_message = message;
-		m_parser = createParser(m_message);
+	
+	private Factory(){
+		
 	}
-	public Factory getInstance(){
+	public static Factory getInstance(){
 		if (m_instance == null)
-			m_instance = new Factory(m_message);
+			m_instance = new Factory();
 		return m_instance;
 	} 
 	public IMessageParser createParser(String message){
-		return new MessageParser(message);
+		m_parser = new MessageParser(message);
+		return m_parser;
 	}
 }

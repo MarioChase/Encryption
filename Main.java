@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 	public static void main(String args[]) throws Exception {
-		String msg1 = "MY  FEVOUROTI THONG EBUAT IERTH OS FRINCH FROIS";
+		String msg1 = "MY FEVUROTI THONG EBUAT IERTH OS FRINCH FROIS";
 		String msg2 = "KCIR DLEIFGNIRPS SI YM ETIROVAF GNIDROCER TSITRA";
 		System.out.println("Decrypting message 1 using Vowel Mash:");
 		ICrypto c = VowelMash.getInstance();
